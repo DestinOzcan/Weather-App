@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
 
 body{
-    background-color: #41C9E2;
+    background-color: #008DDA;
     font-family: 'Sunflower', sans-serif;
     display: flex;
     align-items: center;
@@ -11,44 +11,58 @@ body{
 }
 
 #weather-container{
+    display: flex;
+    flex-direction: column;
     background: rgba(255, 255, 255, 0.3);
-    max-width: 400px;
+    width: 800px;
+    height: 600px;
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     border: solid rgba(255, 255, 255, 0.1);
-    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    
 }
 
 h2, label, p{
     color: #fff;
     margin: 8px 0;
+    font-size: 70px;
+    font-weight: bold;
 }
 
 input{
     width: calc(100% - 16px);
+    height: auto;
     padding: 8px;
     box-sizing: border-box;
     border-radius: 10px;
     border: 1px solid white;
-    margin-top: 20px;
+    margin-top: 150px;
+    font-size: 30px;
 }
 
 button{
     background: #F7EEDD;
-    color: black;
+    color: #005e90;
     padding: 10px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    margin-top: 20px;
-    width: 100px;
-    font-size: 15px;
+    margin-top: 140px;
+    width: 200px;
+    height: 70px;
+    font-size: 30px;
+    font-weight: bold;
+    transition: all .2s  ease-in-out;
 }
 
 button:hover{
     background: #ACE2E1;
+    color: #238799;
+    transform: scale(1.1);
 }
 
 #temp-div p{
