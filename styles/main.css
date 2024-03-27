@@ -17,7 +17,7 @@ body{
     width: 850px;
     height: auto;
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 30px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     border: solid rgba(255, 255, 255, 0.1);
@@ -88,22 +88,6 @@ button:hover{
     justify-content: space-between;
 }
 
-.hourly-item{
-    flex: 0 0 auto;
-    width: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: 10px;
-    color: black;
-}
-
-.hourly-item img{
-    width: 30px;
-    height: 30px;
-    margin-bottom: 5px;
-}
-
 #hourly-heading{
     color: black;
     margin-top: 10px;
@@ -111,7 +95,12 @@ button:hover{
 
 .hourly-item {
     display: flex;
+    flex: 0 0 auto;
+    width: 80px;
     flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    color: black;
     padding: 8px;
     background-color: #41C9E2;
     border-radius: 15px;
@@ -119,4 +108,11 @@ button:hover{
     padding-right: 5px;
     border: solid 3px #005e90;
     justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hourly-item img {
+    width: 40px;
+    height: 40px;
 }
